@@ -36,7 +36,7 @@ export function Background({ useStore }) {
       if (url.includes(".hdr")) {
         let rgbe = new RGBELoader();
         rgbe.setCrossOrigin("yo");
-        rgbe.setDataType(FloatType);
+        // rgbe.setDataType(FloatType);
         rgbe
           .loadAsync(url)
           .then((tx) => {
